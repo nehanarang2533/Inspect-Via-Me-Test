@@ -10,11 +10,19 @@ function Login() {
     e.preventDefault()
     setError('')
     if (!email.trim()) {
-      setError('Please enter your email.')
+      setError('Please enter you email.')
+      return
+    }
+    if (email.indexOf('@') === -1) {
+      setError('Please enter a valid email address.')
       return
     }
     if (!password) {
       setError('Please enter your password.')
+      return
+    }
+    if (password.length <= 8) {
+      setError('Password must be at least 8 characters.')
       return
     }
     // TODO: connect to auth API
@@ -56,11 +64,11 @@ function Login() {
               className="login-input"
               placeholder="••••••••"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
               autoComplete="current-password"
             />
           </label>
-          <button type="submit" className="login-submit">
+          <button type="button" className="login-submit">
             Sign in
           </button>
         </form>
