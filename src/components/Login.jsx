@@ -40,7 +40,7 @@ function Login() {
             </svg>
           </div>
           <h1>Food Delivery Admin</h1>
-          <p>Signnnn in to manage orders and restaurants</p>
+          <p>Signnnn innnn to manage orders and restaurants</p>
         </div>
 
         <form className="login-form" onSubmit={handleSubmit}>
