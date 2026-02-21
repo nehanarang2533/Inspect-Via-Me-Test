@@ -1,11 +1,7 @@
-import React from 'react';
+import Login from './components/Login'
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to the Food Delivery Admin Panel</h1>
-    </div>
-  );
+  return <Login />
 }
 
-export default App;
+export default App
