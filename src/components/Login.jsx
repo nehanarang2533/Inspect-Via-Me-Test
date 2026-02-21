@@ -97,7 +97,7 @@ const Login = () => {
         <div className="login-header">
           <div className="login-logo">🍕</div>
           <h1>Food Delivery Admin</h1>
-          <p>Restaurant Management System</p>
+          <p>Restauran Management System</p>
         </div>
 
         {successMessage && (
